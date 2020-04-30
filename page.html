@@ -1,0 +1,75 @@
+<html>
+<meta charset="ISO-8859-1">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="general.css">
+<script>
+document.addEventListener( 'DOMContentLoaded', function () {
+	  var root = document.body.style;
+	  console.log(root);
+
+	  // Initialize variables
+	  root.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+
+	  // Scroll events
+	  window.addEventListener('scroll',scroll,false);
+	  function scroll() {
+	    root.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+	  }
+	});
+
+</script>
+</head>
+<body>
+<script>
+$(document).ready(function() {
+    var myElement = $('.top');
+    var myBottom = $('.bottom');
+    $(window).on('scroll', function () {
+      var st = $(this).scrollTop();
+      myElement.css({
+         'opacity': 1 - st / 600
+      });
+      myBottom.css({
+      		'opacity': 1 + st / 600
+      });
+   });
+ });
+
+</script>
+<div style="position:fixed;">
+  <section class="section parallax bg1" class="js-section">
+  	<img align="middle" class="bottom" src="empty.png" />
+  	<img align="middle" class="top" src="full.png" />
+  </section>
+</div>
+
+<div style="position:relative;padding-top:200vh;width:100%;">
+<div style="width:100%;">
+<h1 align="right">
+A Long Way Home
+</h1>
+</div>
+</div>
+
+
+<div style="position:relative;height:500px;width:100%;">
+<div style="background-color:#fff;width:100%;height:500px;">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a justo finibus, vestibulum eros eget, pharetra lectus. Mauris non orci sit amet elit commodo euismod. Maecenas dignissim risus et ipsum tincidunt vestibulum. Pellentesque vel augue ut sem venenatis varius. Vivamus id porttitor nunc. Fusce dolor lorem, efficitur in sem vitae, tempus vestibulum metus. Nulla facilisi. Nunc gravida leo lacus, eget finibus orci luctus sit amet. Quisque quis tempor enim, vitae lacinia turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vitae purus sed metus pulvinar consectetur in eu tellus. Aliquam porttitor odio non mauris sollicitudin sodales. Aliquam erat volutpat. Nunc ultricies bibendum nisi at sollicitudin.
+</p>
+<p>
+Nullam viverra mauris mattis, tempus erat semper, dignissim tortor. Aliquam a ultricies lorem, sed blandit ante. Nunc volutpat mauris eget consectetur posuere. Phasellus aliquam odio vel vehicula fringilla. Donec dui elit, facilisis pretium pellentesque vel, hendrerit quis nibh. Etiam eget purus neque. Sed scelerisque justo quam, in auctor felis sollicitudin a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec tincidunt at neque non mattis. Duis cursus sapien a diam congue sodales. Vivamus non odio sed tellus dignissim rutrum. Aliquam erat volutpat. Quisque aliquam tincidunt porta. Nullam efficitur tempor purus nec semper. Nulla massa erat, auctor sit amet neque ut, malesuada dignissim augue.
+</p>
+<p>
+Nulla nec nunc non eros efficitur dapibus elementum ac nibh. Nam pharetra massa ut massa venenatis, elementum congue odio mollis. Ut augue felis, viverra a lorem in, cursus pharetra lorem. Vestibulum tempus fermentum risus, et condimentum est mattis non. In cursus est in velit mollis, a imperdiet justo efficitur. Vivamus vitae blandit metus, nec suscipit felis. Sed facilisis facilisis finibus.
+</p>
+<p>
+Donec vitae varius eros, ac tempor dui. Duis imperdiet purus vitae leo scelerisque sagittis. Ut scelerisque congue mollis. Vivamus a hendrerit diam. Pellentesque at convallis mi, ut bibendum dolor. Ut porttitor, nisl ut consectetur dapibus, velit tellus consectetur dolor, in tincidunt ex velit sit amet justo. Mauris lectus augue, mattis eu dolor suscipit, imperdiet cursus quam. Donec imperdiet iaculis laoreet. Aenean posuere ex eget sem pellentesque, a ullamcorper nisl convallis. Nunc viverra sed arcu ut posuere. Nunc molestie elit ligula, in dictum justo fermentum quis. Maecenas tincidunt ultricies placerat. Integer in pellentesque tortor.
+</p>
+</div>
+</div>
+
+</body>
+
+</html>
