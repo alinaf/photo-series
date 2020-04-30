@@ -15,6 +15,6 @@ $(document).scroll(function () {
     if (y > 3000) {
         $('#img4').fadeIn({});
     }
-    else {$('#img4').fadeOut('slow')};
+    else {$('#img4').fadeOut('fast')};
 
 });
