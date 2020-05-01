@@ -1,20 +1,13 @@
-$(document).scroll(function () {
-    var y = $(this).scrollTop();
-        console.log(y);
+jQuery(window).scroll(function(){
+    var fromTopPx = 20; // distance to trigger
+    var scrolledFromtop = jQuery(window).scrollTop();
+        console.log(scrolledFromtop);
 
-    if (y > 1000) {
-        $('#img2').fadeIn({});
+    if(scrolledFromtop > fromTopPx){
+        console.log('add');
+        $("#bg").addClass('scrolled');
+    }else{
+         console.log('remove');
+         $("#bg").removeClass('scrolled');
     }
-    else {$('#img2').fadeOut('slow')};
-    
-    if (y > 2000) {
-        $('#img3').fadeIn({});
-    }
-    else {$('#img3').fadeOut('slow')};
-    
-    if (y > 3000) {
-        $('#img4').fadeIn({});
-    }
-    else {$('#img4').fadeOut('fast')};
-
 });
