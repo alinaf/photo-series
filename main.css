@@ -1,3 +1,10 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico|Playfair+Display|Satisfy|Abhaya+Libre";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+*/@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
 body, html {
   height: 100%;
   margin: 0;
@@ -8,7 +15,7 @@ body, html {
   background-image: url("full.png");
 
   /* Full height */
-  height: 100%; 
+  height: 120%; 
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -20,5 +27,25 @@ body, html {
 }
 
 #bg.scrolled {
+     transition: background 1s ease;
     background-image: url("empty.png");
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.main h3 {
+   font-family: 'Abhaya Libre', serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.main p {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.2em;
+    line-height: 150%;
 }

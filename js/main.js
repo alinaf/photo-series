@@ -1,5 +1,5 @@
 jQuery(window).scroll(function(){
-    var fromTopPx = 20; // distance to trigger
+    var fromTopPx = 100; // distance to trigger
     var scrolledFromtop = jQuery(window).scrollTop();
         console.log(scrolledFromtop);
 
