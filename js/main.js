@@ -10,3 +10,7 @@ jQuery(window).scroll(function(){
          $("#bg").removeClass('scrolled');
     }
 });
+
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
