@@ -9,6 +9,12 @@ body, html {
   margin: 0;
 }
 
+/* preload */
+body::after{
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+   content:url(empty.png) url(full.png) url(img3.gif) url(img4.jpg);
+}
+
 #bg {
   /* The image used */
   background-image: url("full.png");

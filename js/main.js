@@ -1,9 +1,8 @@
 jQuery(window).scroll(function(){
-    var fromTopPx = 100; // distance to trigger
+    var full = 100; // distance to trigger
     var scrolledFromtop = jQuery(window).scrollTop();
-        console.log(scrolledFromtop);
 
-    if(scrolledFromtop > fromTopPx){
+    if(scrolledFromtop > full){
         console.log('add');
         $("#bg").addClass('scrolled');
     }else{
