@@ -12,7 +12,7 @@ body, html {
 /* preload */
 body::after{
    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-   content:url(empty.png) url(full.png) url(img3.gif) url(img4.jpg);
+   content:url(empty.png) url(full.png);
 }
 
 .preload * {
@@ -62,3 +62,45 @@ body::after{
     font-size: 1.2em;
     line-height: 150%;
 }
+
+.main img {
+    width: 80%;
+}
+
+.bigImage img {
+    width: 100%;
+}
+
+.smallImage img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+@media screen and (max-width: 980px) {
+    .smallImage img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .smallImage p {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1em;
+        margin-left: 5%;
+    }
+}
+
+.smallImage p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    margin-bottom: 70px;
+    margin-left: 10%;
+}
+
+.bigImage p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    margin-left: 5%;
+    margin-bottom: 70px;
+}
+
