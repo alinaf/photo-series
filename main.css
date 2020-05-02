@@ -11,7 +11,7 @@ body, html {
 /* preload */
 body::after{
    position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-   content:url(empty.png) url(full.png);
+   content:url(img/empty.png) url(img/full.png);
 }
 
 .preload * {
@@ -40,7 +40,7 @@ body::after{
 
 #bg {
   /* The image used */
-  background-image: url("full.png");
+  background-image: url("img/full.png");
 
   /* Full height */
   height: 120%; 
@@ -57,7 +57,7 @@ body::after{
 
 #bg.scrolled {
      transition: background 1s ease;
-    background-image: url("empty.png");
+    background-image: url("img/empty.png");
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
@@ -94,6 +94,12 @@ body::after{
     width: 80%;
 }
 
+.small video {
+  margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
 .photo {
   text-align: center;
 }
@@ -118,20 +124,16 @@ body::after{
     }
 }
 
+.credit {
+  font-family: 'Libre Baskerville', serif;
+  font-size: .8em;
+  margin-bottom: 10px;
+}
+
 .footer {
   text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 1.5;
+  color: #282828;
 }
-
-.footer hr {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.footer p {
-  font-family: 'Libre Baskerville', serif;
-  font-size: .9em;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
