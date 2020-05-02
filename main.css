@@ -107,6 +107,10 @@ body::after{
   margin-bottom: 70px;
 }
 
+.photo h3 {
+   font-family: 'Libre Baskerville', serif;
+}
+
 /* Make small full screen */
 
 @media screen and (max-width: 980px) {
