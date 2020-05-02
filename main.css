@@ -21,6 +21,23 @@ body::after{
   -o-transition: none !important;
 }
 
+#bg h3 {
+  padding-top: 13px;
+  margin: 0px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+  letter-spacing: 2px
+}
+
+#bg h3 span {
+  background-color: rgb(255,255,255,0.6);
+}
+
+#bg a {
+  text-decoration: none;
+  color: black;
+}
+
 #bg {
   /* The image used */
   background-image: url("full.png");
@@ -35,6 +52,7 @@ body::after{
   transition: background 1s ease;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  text-align: center;
 }
 
 #bg.scrolled {
@@ -76,18 +94,14 @@ body::after{
     width: 80%;
 }
 
+.photo {
+  text-align: center;
+}
+
 .photo p {
   font-family: 'Libre Baskerville', serif;
   font-size: 1em;
   margin-bottom: 70px;
-}
-
-.small p {
-    margin-left: 10%;
-}
-
-.big p {
-    margin-left: 5%;
 }
 
 /* Make small full screen */
@@ -98,14 +112,26 @@ body::after{
         width: 100%;
     }
 
-    .small p {
+    .photo p {
         margin-left: 5%;
         margin-right: 5%;
     }
-
-    .big p {
-      margin-right: 5%;
-    }
 }
 
+.footer {
+  text-align: center;
+}
+
+.footer hr {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: .9em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
