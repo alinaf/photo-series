@@ -91,10 +91,10 @@ body::after{
     width: 80%;
 }
 
-.small video {
-  margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+.gif img {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
 }
 
 .photo {
@@ -105,6 +105,8 @@ body::after{
   font-family: 'Libre Baskerville', serif;
   font-size: 1em;
   margin-bottom: 70px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .photo h3 {
@@ -113,15 +115,22 @@ body::after{
 
 /* Make small full screen */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 700px) {
     .small img {
         margin: 0;
         width: 100%;
     }
 
-    .photo p {
-        margin-left: 5%;
-        margin-right: 5%;
+    .gif img {
+      width: 100%;
+      margin: 0;
+    }
+}
+
+@media screen and(max-width: 800px) {
+    .gif img {
+      width: 100%;
+      margin: 0;
     }
 }
 
