@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Campus Gone Quiet</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="main.css" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Campus Gone Quiet" />
@@ -40,7 +39,11 @@
 	</div>
 
 	<div class="big photo">
-		<img src="img/DJI_0310.jpg">
+		<img srcset="img/test.jpg 500w,
+             img/DJI_0310.jpg 2000w"
+     	sizes="(max-width: 600px) 500px,
+            2000px"
+		src="img/DJI_0310.jpg">
 		<h3>Hahn Plaza</h3>
 		<p>One of the busiest parts of campus on a normal day, Hahn Plaza has gotten next to no visitors recently as in-person tours have been canceled and postponed and campus access has been limited.</p>
 	</div>
