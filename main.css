@@ -120,6 +120,14 @@ body::after{
       width: 100%;
       margin: 0;
     }
+
+  #bg.scrolled {
+    background-image: url("img/empty2.jpg");
+  }
+
+  #bg.scrolled {
+    background-image: url("img/full2.jpg");
+  }
 }
 
 @media screen and(max-width: 800px) {
