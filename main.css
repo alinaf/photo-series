@@ -122,11 +122,11 @@ body::after{
     }
 
   #bg.scrolled {
-    background-image: url("img/empty2.jpg");
+    background-image: url("img/empty-2.jpg");
   }
 
   #bg.scrolled {
-    background-image: url("img/full2.jpg");
+    background-image: url("img/full-2.jpg");
   }
 }
 
